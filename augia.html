@@ -8,9 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/augia.css">
 
-    <!-- Additional styles for the blog and playlist sections -->
+    <!-- Additional styles for the blog, playlist, and updates sections -->
     <style>
-        .blog-container {
+        .blog-container, .playlist-container, .updates-container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
@@ -20,7 +20,7 @@
             margin-top: 20px;
         }
 
-        .blog-post {
+        .blog-post, .playlist-item, .update-item {
             margin-bottom: 20px;
             padding: 20px;
             border: 1px solid #ddd;
@@ -28,37 +28,11 @@
             background-color: #f9f9f9;
         }
 
-        .blog-post h3 {
+        .blog-post h3, .playlist-item p, .update-item p {
             color: #333;
         }
 
-        .blog-post p {
-            color: #555;
-        }
-
-        /* Additional styles for the playlist section */
-        .playlist-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            margin-top: 20px;
-        }
-
-        .playlist-item {
-            margin-bottom: 10px;
-        }
-
-        .playlist-item img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 4px;
-        }
-
-        .playlist-item p {
-            margin-top: 5px;
+        .blog-post p, .playlist-item img, .playlist-item p, .update-item p {
             color: #555;
         }
     </style>
@@ -136,6 +110,26 @@
         </div>
 
         <!-- Add more playlist items as needed -->
+
+    </section>
+
+    <!-- Updates Section -->
+    <section class="updates-container">
+        <h2>Updates</h2>
+
+        <!-- Update Item 1 -->
+        <div class="update-item">
+            <h3>Update Title 1</h3>
+            <p>This is the content of your first update. Share news, thoughts, or anything you want to keep her updated about.</p>
+        </div>
+
+        <!-- Update Item 2 -->
+        <div class="update-item">
+            <h3>Update Title 2</h3>
+            <p>Another update can go here. Customize as needed.</p>
+        </div>
+
+        <!-- Add more update items as needed -->
 
     </section>
 
