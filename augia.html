@@ -8,9 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/augia.css">
 
-    <!-- Additional styles for the blog, playlist, and updates sections -->
+    <!-- Additional styles for the blog, playlist, updates, and video sections -->
     <style>
-        .blog-container, .playlist-container, .updates-container {
+        .blog-container, .playlist-container, .updates-container, .video-container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
@@ -20,7 +20,7 @@
             margin-top: 20px;
         }
 
-        .blog-post, .playlist-item, .update-item {
+        .blog-post, .playlist-item, .update-item, .video-item {
             margin-bottom: 20px;
             padding: 20px;
             border: 1px solid #ddd;
@@ -28,12 +28,19 @@
             background-color: #f9f9f9;
         }
 
-        .blog-post h3, .playlist-item p, .update-item p {
+        .blog-post h3, .playlist-item p, .update-item p, .video-item p {
             color: #333;
         }
 
-        .blog-post p, .playlist-item img, .playlist-item p, .update-item p {
+        .blog-post p, .playlist-item img, .playlist-item p, .update-item p, .video-item p {
             color: #555;
+        }
+
+        .video-item iframe {
+            width: 100%;
+            height: 400px; /* Adjust the height as needed */
+            border: none;
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -130,6 +137,17 @@
         </div>
 
         <!-- Add more update items as needed -->
+
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-container">
+        <h2>Special Video</h2>
+
+        <div class="video-item">
+            <!-- Replace the video URL with your own -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+        </div>
 
     </section>
 
