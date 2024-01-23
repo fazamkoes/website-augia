@@ -6,11 +6,11 @@
     <title>Self Intro</title>
     <link rel="icon" href="img/myface5.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/augia.css">
+    <link rel="stylesheet" type="text/css" href="css/esha.css">
 
-    <!-- Additional styles for the blog, playlist, updates, and video sections -->
+    <!-- Additional styles for the blog, playlist, updates, video, and button sections -->
     <style>
-        .blog-container, .playlist-container, .updates-container, .video-container {
+        .blog-container, .playlist-container, .updates-container, .video-container, .buttons-container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
@@ -20,7 +20,7 @@
             margin-top: 20px;
         }
 
-        .blog-post, .playlist-item, .update-item, .video-item {
+        .blog-post, .playlist-item, .update-item, .video-item, .button-item {
             margin-bottom: 20px;
             padding: 20px;
             border: 1px solid #ddd;
@@ -28,11 +28,11 @@
             background-color: #f9f9f9;
         }
 
-        .blog-post h3, .playlist-item p, .update-item p, .video-item p {
+        .blog-post h3, .playlist-item p, .update-item p, .video-item p, .button-item p {
             color: #333;
         }
 
-        .blog-post p, .playlist-item img, .playlist-item p, .update-item p, .video-item p {
+        .blog-post p, .playlist-item img, .playlist-item p, .update-item p, .video-item p, .button-item p {
             color: #555;
         }
 
@@ -41,6 +41,25 @@
             height: 400px; /* Adjust the height as needed */
             border: none;
             border-radius: 8px;
+        }
+
+        .button-item button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button-item #yes-btn {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        .button-item #no-btn {
+            background-color: #f44336;
+            color: #fff;
         }
     </style>
 </head>
@@ -146,9 +165,18 @@
 
         <div class="video-item">
             <!-- Replace the video URL with your own -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/your-initial-video-id" frameborder="0" allowfullscreen></iframe>
         </div>
 
+    </section>
+
+    <!-- Button Section -->
+    <section class="buttons-container">
+        <h2>Choose one:</h2>
+        <div class="button-item">
+            <button id="yes-btn" onclick="redirectToYesVideo()">Yes</button>
+            <button id="no-btn" onclick="redirectToNoVideo()">No</button>
+        </div>
     </section>
 
     <!-- ... Your existing code ... -->
@@ -156,6 +184,17 @@
     <footer>
         <p>I promise I'll update this website every now and then. This ones a bit boring but it'll get better.</p>
     </footer>
+
+    <!-- JavaScript to redirect to different videos -->
+    <script>
+        function redirectToYesVideo() {
+            window.location.href = "https://www.youtube.com/embed/your-yes-video-id";
+        }
+
+        function redirectToNoVideo() {
+            window.location.href = "https://www.youtube.com/embed/your-no-video-id";
+        }
+    </script>
 
 </body>
 </html>
